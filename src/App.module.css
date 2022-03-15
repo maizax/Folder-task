@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  color: black;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+p {
+  margin-bottom: 3px;
+  font-size: 20px;
+}
+
+header {
+  background-color: white;
+  text-align: left;
+  font-size: 25px;
+  color: white;
+  height: 100px;
+  border: 2px solid;
+  border-bottom: 0;
+  border-color: black;
+  line-height: 90px;
+  padding-left: 50px;
+}
+
+section {
+  display: flex;
+}
+
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 300px;
+  overflow-y: scroll;
+  height: 100vh;
+  border: 2px solid;
+  display: block;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.preview {
+  border: 2px solid;
+  border-color: black;
+  border-left: 0;
+  width: 100%;
+  padding: 50px;
+  overflow-y: scroll;
+  height: 100vh;
+}
+.folderIsActive {
+  border: 2px solid;
+  border-color: black;
+  border-left: 0;
+  width: 100%;
+  padding: 50px;
+  overflow-y: scroll;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  grid-auto-rows: 200px;
+}
+
+.arrowRight {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-right: 7px;
+}
+
+.arrowDown {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-right: 7px;
+}
+
+.notActive {
+  cursor: pointer;
+}
+
+.active {
+  cursor: pointer;
+}
+
+.active:focus {
+  background-color: rgb(165, 165, 165);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.oneLetter {
+  border: 2px solid;
+  border-color: black;
+  width: 70px;
+  height: 70px;
+  text-transform: uppercase;
+  display: grid;
+  margin: auto;
+  margin-bottom: 15px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.greyFolder {
+  list-style-type: none;
+  background-color: lightgray;
+  width: 130px;
+  height: 80px;
+  margin: auto;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  align-items: center;
+}
+
+.centering {
+  text-align: center;
+  
+}
+
+.folderIsEmpty {
+  width: 300px;
+}
