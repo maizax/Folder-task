@@ -31,7 +31,6 @@ export default function Item({ item }) {
           />
         )}
         {item.name}
-        {item}
       </li>
 
       {isExpandedItem && item.children && (
